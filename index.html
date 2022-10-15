@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Seungyong Moon</title>
+  <title>Deokjae Lee</title>
   
-  <meta name="author" content="Seungyong Moon">
+  <meta name="author" content="Deokjae Lee">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
-
+<style>
+  body{ background-color:#272822}
+</style>
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
@@ -18,20 +20,20 @@
           <tr style="padding:0px">
             <td style="padding:20px;width:70%;vertical-align:middle">
               <p style="text-align:center">
-                <name>Seungyong Moon</name>
+                <name>Deokjae Lee</name>
               </p>
               <p>
-                I am a fourth-year Ph.D. student in Computer Science and Engineering at Seoul National University, advised by <a href="https://mllab.snu.ac.kr/hyunoh">Hyun Oh Song</a>. I previously graduated from Seoul National University in 2019 with a B.S. in Mathematical Science, a B.A. in Economics, and a Minor in Computer Science and Engineering.
+                I am a third-year Ph.D. student in Computer Science and Engineering at Seoul National University, advised by <a href="https://mllab.snu.ac.kr/hyunoh">Hyun Oh Song</a>. I previously graduated from Seoul National University in 2020 with a B.S. in Mathematical Science. My research interests are combinatorial optimization and efficient machine learning. Also, I’m interested in natural language processing (NLP) and reinforcement learning (RL).
               </p>
               <p style="text-align:center">
-                <a href="mailto:symoon11@mllab.snu.ac.kr">Email</a> &nbsp/&nbsp
-                <a>CV</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=peAk7psAAAAJ&hl=ko">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/drillermoon/">Github</a>
+                <a href="mailto:bdbj@mllab.snu.ac.kr">Email</a> &nbsp/&nbsp
+                <!--<a>CV</a> &nbsp/&nbsp-->
+                <a href="https://scholar.google.com/citations?user=G8JsnZAAAAAJ&hl=ko">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/badeok0716/">Github</a>
               </p>
             </td>
             <td style="padding:20px;width:30%;vertical-align:middle">
-              <img width="160" alt="profile photo" src="images/seungyong.jpg">
+              <img width="160" alt="profile photo" src="images/deokjae.jpg">
             </td>
           </tr>
         </tbody></table>
@@ -50,49 +52,12 @@
               <heading>Publications</heading>
             </td>  
           </tr>
-          
-          <tr onmouseout="rl_gen_stop()" onmouseover="rl_gen_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div id='text' class='hidden'><img width="160"></div>
-              <div id='notext'>
-                <a href=""><img width="160"></a>
-              </div>
-              <script type="text/javascript">
-                function rl_gen_start() {
-                  document.getElementById('text').style.display = 'inline';
-                  document.getElementById('notext').style.display = 'none';
-                }
-
-                function rl_gen_stop() {
-                  document.getElementById('text').style.display = 'none';
-                  document.getElementById('notext').style.display = 'inline';
-                }
-                text_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a>
-                <papertitle>Rethinking Value Function Learning for Generalization in Reinforcement Learning</papertitle>
-              </a>
-              <br>
-              <strong>Seungyong Moon</strong>,
-              JunYeong Lee,
-              <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>
-              <br>
-              <em> Neural Information Processing Systems (NeurIPS)</em>, 2022
-              <br>
-              <a href="https://github.com/snu-mllab/DCPG">code</a> /
-              <a href="data/moon22neurips.txt">bibtex</a>
-              <p></p>
-              <p></p>
-            </td>
-          </tr>
 
           <tr onmouseout="text_stop()" onmouseover="text_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div id='text' class='hidden'><img width="160" src="images/lee22icml.gif"></div>
+            <td style="padding:20px;width:30%;vertical-align:middle">
+              <div id='text' class='hidden'><img width="256" src="images/lee22icml2.gif"></div>
               <div id='notext'>
-                <a href=""><img width="160" src="images/lee22icml.png"></a>
+                <a href=""><img width="256" src="images/lee22icml2.gif"></a>
               </div>
               <script type="text/javascript">
                 function text_start() {
@@ -107,18 +72,20 @@
                 text_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="padding:20px;width:70%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2206.08575">
                 <papertitle>Query-Efficient and Scalable Black-Box Adversarial Attacks on Discrete Sequential Data via Bayesian Optimization</papertitle>
               </a>
               <br>
-              Deokjae Lee,
-              <strong>Seungyong Moon</strong>,
+              <strong>Deokjae Lee</strong>,
+              Seungyong Moon,
               Junhyeok Lee,
               <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>
               <br>
               <em>International Conference on Machine Learning (ICML)</em>, 2022
               <br>
+              <a href="https://arxiv.org/abs/2206.08575">paper</a> /
+              <a href="images/lee22icml_poster.pdf">poster</a> /
               <a href="https://github.com/snu-mllab/discreteblockbayesattack">code</a> /
               <a href="data/lee22icml.txt">bibtex</a>
               <p></p>
@@ -126,87 +93,10 @@
             </td>
           </tr>
 
-          <tr onmouseout="defense_stop()" onmouseover="defense_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div id='defense' class='hidden'><img width="160" src="images/moon22aaai.gif"></div>
-              <div id='nodefense'>
-                <a href="images/moon22aaai.gif"><img width="160" src="images/moon22aaai.png"></a>
-              </div>
-              <script type="text/javascript">
-                function defense_start() {
-                  document.getElementById('defense').style.display = 'inline';
-                  document.getElementById('nodefense').style.display = 'none';
-                }
-
-                function defense_stop() {
-                  document.getElementById('defense').style.display = 'none';
-                  document.getElementById('nodefense').style.display = 'inline';
-                }
-                defense_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2112.05634">
-                <papertitle>Preemptive Image Robustification for Protecting Users against Man-in-the-Middle Adversarial Attacks</papertitle>
-              </a>
-              <br>
-              <strong>Seungyong Moon*</strong>,
-              Gaon An*,
-              <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>
-              <br>
-              <em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2022
-              <br>
-              <a href="https://github.com/snu-mllab/preemptive-robustification">code</a> /
-              <a href="data/moon22aaai.txt">bibtex</a>
-              <p></p>
-              <p>Leveraging an intriguing property of deep neural networks that they have robust points near in-distribution datapoints, we propose a novel defense framework that preemptively modifies images ahead of adversarial attacks, which can be applied to a realistic scenario.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="run_stop()" onmouseover="run_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div id='run' class='hidden'><img width="160" src="images/an21neurips.gif"></div>
-              <div id='stop'>
-                <a href="images/an21neurips.gif"><img width="160" src="images/an21neurips.png"></a>
-              </div>
-              <script type="text/javascript">
-                function run_start() {
-                  document.getElementById('run').style.display = 'inline';
-                  document.getElementById('stop').style.display = 'none';
-                }
-
-                function run_stop() {
-                  document.getElementById('run').style.display = 'none';
-                  document.getElementById('stop').style.display = 'inline';
-                }
-                run_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2110.01548">
-                <papertitle>Uncertainty-Based Offline Reinforcement Learning with Diversified Q-Ensemble</papertitle>
-              </a>
-              <br>
-              Gaon An*,
-              <strong>Seungyong Moon*</strong>,
-              <a href="https://janghyun1230.github.io/">Jang-Hyun Kim</a>,
-              <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>
-              <br>
-              <em>Neural Information Processing Systems (NeurIPS)</em>, 2021
-              <br>
-              <a href="https://github.com/snu-mllab/EDAC">code</a> /
-              <a href="data/an21neurips.txt">bibtex</a>
-              <p></p>
-              <p>Q-function ensemble technique, developed for addressing overestimation bias in online RL, can be also applied to offline RL with Q-function diversification. We propose a simple offline RL algorithm that does not require behavior cloning or explicit Q-value penalization.</p>
-            </td>
-          </tr>
-
           <tr onmouseout="attack_stop()" onmouseover="attack_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div id='attack' class='hidden'><img width="160" src="images/moon19icml.gif"></div>
-              <div id='noattack'>
-                <a href="images/moon19icml.gif"><img width="160" src="images/moon19icml.png"></a>
-              </div>
+            <td style="padding:20px;width:30%;vertical-align:middle">
+              <div id='attack' class='hidden'><img width="256" src="images/jeong22icml.png"></div>
+              <div id='noattack'><img width="256" src="images/jeong22icml.png"></div>
               <script type="text/javascript">
                 function attack_start() {
                   document.getElementById('attack').style.display = 'inline';
@@ -220,21 +110,22 @@
                 attack_stop()
               </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/1905.06635">
-                <papertitle>Parsimonious Black-Box Adversarial Attacks via Efficient Combinatorial Optimization</papertitle>
+            <td style="padding:20px;width:70%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2202.12417">
+                <papertitle>Optimal channel selection with discrete QCQP</papertitle>
               </a>
               <br>
-              <strong>Seungyong Moon*</strong>,
-              Gaon An*,
+              Yeonwoo Jeong*, <strong>Deokjae Lee*</strong>, Gaon An, Changyong Son,
               <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>
               <br>
-              <em>International Conference on Machine Learning (ICML)</em>, 2019 &nbsp <font color="red"><strong>(Long Talk, 159/3424=4.6%)</strong></font>
+              <!--<em>International Conference on Machine Learning (ICML)</em>, 2019 &nbsp <font color="red"><strong>(Long Talk, 159/3424=4.6%)</strong></font>-->
+              <em>International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2022 
               <br>
-              <a href="https://github.com/snu-mllab/parsimonious-blackbox-attack">code</a> /
-              <a href="data/moon19icml.txt">bibtex</a>
+              <a href="https://arxiv.org/abs/2202.12417">paper</a> /
+              <a href="https://github.com/snu-mllab/Optimal-channel-selection-with-discrete-QCQP">code</a> /
+              <a href="data/jeong22aistats.txt">bibtex</a>
               <p></p>
-              <p>We develop a query-effecient black-box adversarial attack against deep neural networks that does not require gradient estimation and becomes free of hyperparameters to tune, based on local search algorithm for non-monotone submodular function maximization.</p>
+              <p>We propose a novel channel selection method that optimally selects channels via discrete QCQP, which provably prevents any inactive weights and guarantees to meet the resource constraints tightly in terms of FLOPs, memory usage, and network size.</p>
             </td>
           </tr>
         </tbody></table>
@@ -244,8 +135,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Teaching Experience</heading>
               <ul>
-                <li>Teaching Assistant, Machine Learning (4190.666), Fall 2020, Fall 2022</li>
-                <li>Teaching Assistant, Introduction to Deep Learning (M2177.0043), Spring 2019</li>
+                <li>Teaching Assistant, Machine Learning (4190.666), Fall 2020</li>
                 <li>Undergraduate Student Instructor, Basic Calculus 2 (033.017), Fall 2017</li>
                 <li>Undergraduate Student Instructor, Basic Calculus 1 (033.016), Spring 2017</li>
               </ul>
@@ -258,9 +148,8 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Honers and Awards</heading>
               <ul>
-                <li>NeurIPS 2022 Top Reviewers, 2022 </li>
-                <li>Yulchon AI Star scholarship, 2022 </li>
-                <li>KFAS Computer Science Graduate Student Scholarship, 2019 - Present </li>
+                <li>University Mathematics Competition, Field 1 Silver medal, from Korean (2019) </li>
+                <li>National Science & Technology Scholarship, (2018. 03. - 2020. 02.) </li>
               </ul>
             </td>
           </tr>
@@ -271,8 +160,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Academic Services</heading>
               <ul>
-                <li>Conference Reviewer: ICML (2022), NeurIPS (2021, 2022), AAAI (2022, 2023)</li>
-                <li>Journal Reviewer: Neurocomputing (2021)
+                <li>Conference Reviewer: NeurIPS (2022)</li>
               </ul>
             </td>
           </tr>
