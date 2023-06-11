@@ -53,6 +53,46 @@
             </td>  
           </tr>
 
+          <tr onmouseout="depth_stop()" onmouseover="depth_start()">
+            <td style="padding:20px;width:30%;vertical-align:middle">
+              <div id='depth' class='hidden'><img width="256" src="images/kim2023efficient.gif"></div>
+              <div id='nodepth'>
+                <a href=""><img width="256" src="images/kim2023efficient.gif"></a>
+              </div>
+              <script type="text/javascript">
+                function depth_start() {
+                  document.getElementById('depth').style.display = 'inline';
+                  document.getElementById('nodepth').style.display = 'none';
+                }
+
+                function depth_stop() {
+                  document.getElementById('depth').style.display = 'none';
+                  document.getElementById('nodepth').style.display = 'inline';
+                }
+                depth_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:70%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2301.12187">
+                <papertitle>Efficient Latency-Aware CNN Depth Compression via Two-Stage Dynamic Programming</papertitle>
+              </a>
+              <br>
+              Jinuk Kim*,
+              Yeonwoo Jeong*,
+              <strong>Deokjae Lee</strong>,
+              <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>
+              <br>
+              <em>International Conference on Machine Learning (ICML)</em>, 2023
+              <br>
+              <a href="https://arxiv.org/abs/2301.12187">paper</a> /
+              <!-- <a href="images/lee23acl_poster.pdf">poster</a> / -->
+              <a href="https://github.com/snu-mllab/Efficient-CNN-Depth-Compression">code</a> /
+              <a href="data/kim2023efficient.txt">bibtex</a>
+              <p></p>
+              <p> We propose a subset selection optimization problem for depth compression which can be efficiently solved via two-stage dynamic programming.</p>
+            </td>
+          </tr>
+
           <tr onmouseout="redteam_stop()" onmouseover="redteam_start()">
             <td style="padding:20px;width:30%;vertical-align:middle">
               <div id='redteam' class='hidden'><img width="256" src="images/lee23acl.png"></div>
