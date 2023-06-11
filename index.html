@@ -55,19 +55,19 @@
 
           <tr onmouseout="redteam_stop()" onmouseover="redteam_start()">
             <td style="padding:20px;width:30%;vertical-align:middle">
-              <div id='text' class='hidden'><img width="256" src="images/lee23acl.png"></div>
-              <div id='notext'>
+              <div id='redteam' class='hidden'><img width="256" src="images/lee23acl.png"></div>
+              <div id='noredteam'>
                 <a href=""><img width="256" src="images/lee23acl.png"></a>
               </div>
               <script type="text/javascript">
                 function redteam_start() {
-                  document.getElementById('text').style.display = 'inline';
-                  document.getElementById('notext').style.display = 'none';
+                  document.getElementById('redteam').style.display = 'inline';
+                  document.getElementById('noredteam').style.display = 'none';
                 }
 
                 function redteam_stop() {
-                  document.getElementById('text').style.display = 'none';
-                  document.getElementById('notext').style.display = 'inline';
+                  document.getElementById('redteam').style.display = 'none';
+                  document.getElementById('noredteam').style.display = 'inline';
                 }
                 redteam_stop()
               </script>
@@ -92,7 +92,7 @@
               <a href="https://github.com/snu-mllab/Bayesian-Red-Teaming">code</a> /
               <a href="data/lee23acl.txt">bibtex</a>
               <p></p>
-              <p>We propose Bayesian red teaming which discovers model failures by choosing or editing user inputs with GP surrogate models.</p>
+              <p> We propose a novel query-efficient red teaming method, namely Bayesian red teaming (BRT), which identifies failures of black-box generative models by choosing and editing user inputs with GP surrogate models.</p>
             </td>
           </tr>
 
