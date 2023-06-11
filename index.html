@@ -53,6 +53,49 @@
             </td>  
           </tr>
 
+          <tr onmouseout="redteam_stop()" onmouseover="redteam_start()">
+            <td style="padding:20px;width:30%;vertical-align:middle">
+              <div id='text' class='hidden'><img width="256" src="images/lee23acl.png"></div>
+              <div id='notext'>
+                <a href=""><img width="256" src="images/lee23acl.png"></a>
+              </div>
+              <script type="text/javascript">
+                function redteam_start() {
+                  document.getElementById('text').style.display = 'inline';
+                  document.getElementById('notext').style.display = 'none';
+                }
+
+                function redteam_stop() {
+                  document.getElementById('text').style.display = 'none';
+                  document.getElementById('notext').style.display = 'inline';
+                }
+                redteam_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:70%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2305.17444">
+                <papertitle>Query-Efficient Black-Box Red Teaming via Bayesian Optimization</papertitle>
+              </a>
+              <br>
+              <strong>Deokjae Lee</strong>,
+              JunYeong Lee,
+              Jung-Woo Ha,
+              Jin-Hwa Kim,
+              Sang-Woo Lee,
+              Hwaran Lee,
+              <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>
+              <br>
+              <em>Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2023
+              <br>
+              <a href="https://arxiv.org/abs/2305.17444">paper</a> /
+              <a href="images/lee23acl_poster.pdf">poster</a> /
+              <a href="https://github.com/snu-mllab/Bayesian-Red-Teaming">code</a> /
+              <a href="data/lee23acl.txt">bibtex</a>
+              <p></p>
+              <p>We propose Bayesian red teaming which discovers model failures by choosing or editing user inputs with GP surrogate models.</p>
+            </td>
+          </tr>
+
           <tr onmouseout="text_stop()" onmouseover="text_start()">
             <td style="padding:20px;width:30%;vertical-align:middle">
               <div id='text' class='hidden'><img width="256" src="images/lee22icml2.gif"></div>
