@@ -55,6 +55,45 @@
             </td>  
           </tr>
 
+          <tr onmouseout="greedypolicy_stop()" onmouseover="greedypolicy_start()">
+            <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
+              <div id='greedypolicy' class='hidden'><img width="200" src="images/lee24icml.png"></div>
+              <div id='nogreedypolicy'>
+                <a href=""><img width="200" src="images/lee24icml.png"></a>
+              </div>
+              <script type="text/javascript">
+                function greedypolicy_start() {
+                  document.getElementById('greedypolicy').style.display = 'inline';
+                  document.getElementById('nogreedypolicy').style.display = 'none';
+                }
+
+                function greedypolicy_stop() {
+                  document.getElementById('greedypolicy').style.display = 'none';
+                  document.getElementById('nogreedypolicy').style.display = 'inline';
+                }
+                greedypolicy_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:70%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2406.14876">
+                <papertitle>Training Greedy Policy for Proposal Batch Selection in Expensive Multi-Objective Combinatorial Optimization</papertitle>
+              </a>
+              <br>
+              <strong>Deokjae Lee</strong>,
+              <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>
+              <a href="https://kyunghyuncho.me/">Kyunghyun Cho</a>
+              <br>
+              <em>International Conference on Machine Learning (ICML)</em>, 2024
+              <br>
+              <a href="https://arxiv.org/abs/2406.14876">paper</a> /
+              <!-- <a href="images/lee23acl_poster.pdf">poster</a> / -->
+              <a href="https://github.com/snu-mllab/GreedyPolicyForMOCO">code</a> /
+              <a href="data/lee24icml.txt">bibtex</a>
+              <p></p>
+              <p>  We propose a novel subset selection method which trains a greedy policy to solve marginal gain maximization problems concurrently.</p>
+            </td>
+          </tr>
+
           <tr onmouseout="depth_stop()" onmouseover="depth_start()">
             <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
               <div id='depth' class='hidden'><img width="200" src="images/kim2023efficient.gif"></div>
