@@ -61,6 +61,52 @@
             </td>  
           </tr>
 
+          <tr onmouseout="guidedquant_stop()" onmouseover="guidedquant_start()">
+            <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
+              <div id='guidedquant' class='hidden'><img width="200" src="images/kim25icml.png"></div>
+              <div id='noguidedquant'>
+                <a href=""><img width="200" src="images/kim25icml.png"></a>
+              </div>
+              <script type="text/javascript">
+                function guidedquant_start() {
+                  document.getElementById('guidedquant').style.display = 'inline';
+                  document.getElementById('noguidedquant').style.display = 'none';
+                }
+
+                function guidedquant_stop() {
+                  document.getElementById('guidedquant').style.display = 'none';
+                  document.getElementById('noguidedquant').style.display = 'inline';
+                }
+                guidedquant_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:70%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2505.07004">
+                <papertitle>GuidedQuant: Large Language Model Quantization via Exploiting End Loss Guidance</papertitle>
+              </a>
+              <br>
+              Jinuk Kim,
+              Marwa El Halabi,
+              Wonpyo Park,
+              Clemens JS Schaefer,
+              <strong>Deokjae Lee</strong>,
+              Yeonhong Park,
+              <!-- <a href="https://arc.snu.ac.kr/people/pyh/">Yeonhong Park</a>, -->
+              <a href="https://iamjaelee.github.io/www/">Jae W. Lee</a>,
+              <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>,
+              <br>
+              <em>International Conference on Machine Learning (ICML)</em>, 2025
+              <br>
+              <a href="https://arxiv.org/abs/2505.07004">paper</a> /
+              <!-- <a href="images/lee23acl_poster.pdf">poster</a> / -->
+              <a href="https://github.com/snu-mllab/GuidedQuant">code</a> /
+              <a href="https://jusjinuk.me/blog/guidedquant/">project</a> /
+              <a href="data/kim25icml.txt">bibtex</a>
+              <p></p>
+              <p>  We propose GuidedQuant, a novel quantization approach that integrates gradient information from the end loss into the layer-wise quantization objective. </p>
+            </td>
+          </tr>
+
           <tr onmouseout="greedypolicy_stop()" onmouseover="greedypolicy_start()">
             <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
               <div id='greedypolicy' class='hidden'><img width="200" src="images/lee24icml.png"></div>
