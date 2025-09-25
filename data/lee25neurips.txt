@@ -1,0 +1,6 @@
+@inproceedings{lee2025qpalette,
+      title={Q-Palette: Fractional-Bit Quantizers Toward Optimal Bit Allocation for Efficient LLM Deployment}, 
+      author={Deokjae Lee and Hyun Oh Song},
+      booktitle = {Advances in Neural Information Processing Systems},
+      year={2025},
+}

@@ -61,6 +61,44 @@
             </td>  
           </tr>
 
+          <tr onmouseout="qpalette_stop()" onmouseover="qpalette_start()">
+            <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
+              <div id='qpalette' class='hidden'><img width="200" src="images/lee25neurips.svg"></div>
+              <div id='noqpalette'>
+                <a href=""><img width="200" src="images/lee25neurips.svg"></a>
+              </div>
+              <script type="text/javascript">
+                function qpalette_start() {
+                  document.getElementById('qpalette').style.display = 'inline';
+                  document.getElementById('noqpalette').style.display = 'none';
+                }
+
+                function qpalette_stop() {
+                  document.getElementById('qpalette').style.display = 'none';
+                  document.getElementById('noqpalette').style.display = 'inline';
+                }
+                qpalette_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:70%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2509.20214">
+                <papertitle>Q-Palette: Fractional-Bit Quantizers Toward Optimal Bit Allocation for Efficient LLM Deployment</papertitle>
+              </a>
+              <br>
+              <strong>Deokjae Lee</strong>,
+              <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>,
+              <br>
+              <em>Neural Information Processing Systems (NeurIPS)</em>, 2025
+              <br>
+              <a href="https://arxiv.org/abs/2509.20214">paper</a> /
+              <!-- <a href="images/lee23acl_poster.pdf">poster</a> / -->
+              <a href="https://github.com/snu-mllab/Q-Palette">code</a> /
+              <a href="data/lee25neurips.txt">bibtex</a>
+              <p></p>
+              <p>  We develop Q-Palette, a quantizer suite with efficient inference CUDA kernels and wide fractional-bit support. Built on Q-Palette, we propose a novel mixed-scheme quantization framework that jointly optimizes quantizer selection and layer fusion.  </p>
+            </td>
+          </tr>
+
           <tr onmouseout="guidedquant_stop()" onmouseover="guidedquant_start()">
             <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
               <div id='guidedquant' class='hidden'><img width="200" src="images/kim25icml.png"></div>
