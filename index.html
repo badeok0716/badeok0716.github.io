@@ -61,6 +61,50 @@
             </td>  
           </tr>
 
+
+          <tr onmouseout="qstrata_stop()" onmouseover="qstrata_start()">
+            <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
+              <div id='qstrata' class='hidden'><img width="200" src="images/lee26emnlp_dark.png"></div>
+              <div id='noqstrata'>
+                <a href=""><img width="200" src="images/lee26emnlp_dark.png"></a>
+              </div>
+              <script type="text/javascript">
+                function qstrata_start() {
+                  document.getElementById('qstrata').style.display = 'inline';
+                  document.getElementById('noqstrata').style.display = 'none';
+                }
+
+                function qstrata_stop() {
+                  document.getElementById('qstrata').style.display = 'none';
+                  document.getElementById('noqstrata').style.display = 'inline';
+                }
+                qstrata_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:70%;vertical-align:middle">
+              <a href="https://badeok0716.github.io">
+                <papertitle>Q-Strata: Hierarchical Bit Allocation for Mixed-Precision Quantization of Mixture-of-Experts LLMs</papertitle>
+              </a>
+              <br>
+              <strong>Deokjae Lee</strong>,
+              Sihun Chu,
+              <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>,
+              <br>
+              <em>Empirical Methods in Natural Language Processing (EMNLP)</em>, 2026
+              <br>
+              <a href="https://badeok0716.github.io">paper</a> /
+              <!-- <a href="images/lee25neurips_poster.pdf">poster</a> / -->
+              <!-- <a href="images/lee23acl_poster.pdf">poster</a> / -->
+              <a href="https://github.com/snu-mllab/Q-Strata">code</a> /
+              <a href="data/lee26emnlp.txt">bibtex</a>
+              <p></p>
+              <p>  Q-Strata is a bi-level mixed-precision quantization method for MoE LLMs. Within each block, a cheap proxy caches budget-quality tradeoff candidates. Across blocks, the outer stage decides each block's budget by directly optimizing the quality score.  </p>
+            </td>
+          </tr>
+
+
+
+
           <tr onmouseout="qpalette_stop()" onmouseover="qpalette_start()">
             <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
               <div id='qpalette' class='hidden'><img width="200" src="images/lee25neurips.svg"></div>
